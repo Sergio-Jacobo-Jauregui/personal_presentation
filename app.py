@@ -20,7 +20,7 @@ def serve_react():
 def serve_vue():
     return send_from_directory('front_examples/vueFront/dist', 'index.html')
 
-@app.route("/assets/<path:filename>")
+@app.route('/assets/<path:filename>')
 def serve_vue_assets(filename):
     return send_from_directory('front_examples/vueFront/dist/assets', filename)
 
