@@ -4,6 +4,10 @@ app = Flask(__name__)
 app.static_folder = 'static'
 
 # Rutas
+@app.route('/hc')
+def health_check():
+    return 'ok'
+
 @app.route('/')
 def serve_index():
     return render_template('principal_index.html')
@@ -28,5 +32,5 @@ def serve_tailwind():
 def serve_bootstrap():
     return send_from_directory('front_examples/bootstrap', 'index.html')
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
