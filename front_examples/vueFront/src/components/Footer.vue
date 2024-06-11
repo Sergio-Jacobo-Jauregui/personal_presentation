@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div>
-      El objetivo de esta página es demostrar las funciones basicas de Vue.js, no profundice en el diseño
+      El objetivo de esta página es demostrar las funciones basicas de Vue.js, no profundice en el diseño, el repositorio de este proyecto esta en <a class="link-github" href="https://github.com/Sergio-Jacobo-Jauregui/personal_presentation">mi Github</a>
     </div>
   </div>
 </template>
