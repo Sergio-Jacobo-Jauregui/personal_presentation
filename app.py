@@ -4,13 +4,13 @@ app = Flask(__name__)
 app.static_folder = 'static'
 
 # Rutas
-@app.route('/hc')
-def health_check():
-    return 'ok'
-
 @app.route('/')
 def serve_index():
     return render_template('principal_index.html')
+
+@app.route('/hc/')
+def health_check():
+    return 'ok'
 
 @app.route('/reactFront/')
 def serve_react():
