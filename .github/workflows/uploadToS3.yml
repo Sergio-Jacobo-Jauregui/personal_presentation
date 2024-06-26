@@ -20,8 +20,8 @@ jobs:
       run: |
         aws s3 cp ./acerca-de-mi s3://personal-presenation/acerca-de-mi/ --recursive
 
-        aws s3 cp ./front_examples/vueFront/dist s3://personal-presenation/front_examples/vueFront/dist --recursive
-
         aws s3 cp ./principal_index.html s3://personal-presenation/
         aws s3 cp ./style.css s3://personal-presenation/
         aws s3 cp ./vars.json s3://personal-presenation/
+
+        aws s3 cp ./front_examples/vueFront/dist s3://personal-presenation/front_examples/vueFront/dist/ --recursive
