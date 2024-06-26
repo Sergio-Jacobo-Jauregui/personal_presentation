@@ -18,6 +18,8 @@ jobs:
         aws-region: us-east-1
     - name: Upload to S3
       run: |
+        ls -R ./front_examples/vueFront
+        
         aws s3 cp ./acerca-de-mi s3://personal-presenation/acerca-de-mi/ --recursive
 
         aws s3 cp ./principal_index.html s3://personal-presenation/
