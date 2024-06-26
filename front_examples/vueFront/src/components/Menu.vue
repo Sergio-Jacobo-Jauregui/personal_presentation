@@ -1,7 +1,7 @@
 <template>
   <header>
     <ul class="lista-menu">
-      <a href="">
+      <a :href="jsonData.principalUrl">
         <div class="menu-botones-izq">
           Volver al Inicio
         </div>
@@ -17,7 +17,14 @@
 </template>
 
 <script>
+import jsonData from '../../../../vars.json';
+
   export default {
+    data() {
+      return {
+        jsonData: jsonData,
+      }
+    },
     name: 'Menu',
   }
 </script>

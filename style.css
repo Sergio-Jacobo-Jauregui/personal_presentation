@@ -56,6 +56,14 @@ a {
   border-radius: 7px;
 }
 
+#acerca-de-mi {
+  background-color: rgb(255, 56, 222);
+  padding: 6px 30px;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
 #titulo {
   font-size: 45px;
   margin-bottom: 15px;
