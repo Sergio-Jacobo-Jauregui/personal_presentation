@@ -36,6 +36,18 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#my-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#contact-info {
+  width: 100%;
 }
 
 #left-container * {
@@ -50,14 +62,14 @@ body, html {
   margin-bottom: 20px;
 }
 
-#my-name {
-  font-size: 40px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
 #right-container {
   width: 50%;
+  padding: 10px 40px 10px 80px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 
@@ -86,6 +98,9 @@ body, html {
   }
 }
 
+.center-text {
+  text-align: center;
+}
 
 .clear-text {
   color: rgb(255, 214, 126);
@@ -101,4 +116,8 @@ h1 {
 
 span {
   font-weight: bold;
+}
+
+.bleeding-1 {
+  margin-left: 20px;
 }
