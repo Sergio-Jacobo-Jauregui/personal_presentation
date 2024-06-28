@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwaind example front</title>
+        <link href="./assets/output.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="principal-container" class="flex flex-col h-full">
+            <nav class="bg-green-500 h-10 flex items-center pl-5">
+                <a id="link-home" href="">Volver al Inicio</a>
+            </nav>
+
+            <div id="content" class="h-full w-full p-6 flex">
+                <div id="flex-example" class="bg-blue-500 w-1/2 m-3 p-5">
+                    <div id="flex-table" class="w-64 h-64">
+                        <div class="table-flex-row">
+                            <div class="flex-ex-cell justify-start items-start">flex 1</div>
+                            <div class="flex-ex-cell justify-center items-start">flex 2</div>
+                            <div class="flex-ex-cell justify-end items-start">flex 3</div>
+                        </div>
+                        <div class="table-flex-row">
+                            <div class="flex-ex-cell justify-start items-center">flex 4</div>
+                            <div class="flex-ex-cell justify-center items-center">flex 5</div>
+                            <div class="flex-ex-cell justify-end items-center">flex 6</div>
+                        </div>
+                        <div class="table-flex-row">
+                            <div class="flex-ex-cell justify-start items-end">flex 7</div>
+                            <div class="flex-ex-cell justify-center items-end">flex 8</div>
+                            <div class="flex-ex-cell justify-end items-end">flex 9</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="grid-example" class="bg-red-500 w-1/2 m-3 p-5">
+                    <p>Ejemplo de grid</p>
+                    <p>Ejemplo de grid</p>
+                    <p>Ejemplo de grid</p>
+                    <p>Ejemplo de grid</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>
