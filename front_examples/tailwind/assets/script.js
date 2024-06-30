@@ -1,6 +1,6 @@
 // Load json file 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('../../vars.json')
+    fetch('../../../vars.json')
         .then(response => response.json() )
         .then(data => {
             makeChanges(data)

@@ -33,6 +33,13 @@ a {
   border-radius: 500px;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 #carta {
   display: flex;
   align-items: center;
@@ -41,6 +48,31 @@ a {
   width: auto;
   height: auto;
   padding: 15px;
+  margin-bottom: 20px;
+}
+
+#messages-container {
+    position: absolute;
+    margin-top: 20px;
+    bottom: -70px;
+}
+
+#messages-container * {
+    display: none;
+}
+
+.appear {
+  animation: appear 0.3s ease ;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
 #lista-de-fronts {

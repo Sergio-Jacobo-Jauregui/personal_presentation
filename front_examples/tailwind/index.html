@@ -13,31 +13,29 @@
             </nav>
 
             <div id="content" class="h-full w-full p-6 flex">
-                <div id="flex-example" class="bg-blue-500 w-1/2 m-3 p-5">
-                    <div id="flex-table" class="w-64 h-64">
-                        <div class="table-flex-row">
-                            <div class="flex-ex-cell justify-start items-start">flex 1</div>
-                            <div class="flex-ex-cell justify-center items-start">flex 2</div>
-                            <div class="flex-ex-cell justify-end items-start">flex 3</div>
-                        </div>
-                        <div class="table-flex-row">
-                            <div class="flex-ex-cell justify-start items-center">flex 4</div>
-                            <div class="flex-ex-cell justify-center items-center">flex 5</div>
-                            <div class="flex-ex-cell justify-end items-center">flex 6</div>
-                        </div>
-                        <div class="table-flex-row">
-                            <div class="flex-ex-cell justify-start items-end">flex 7</div>
-                            <div class="flex-ex-cell justify-center items-end">flex 8</div>
-                            <div class="flex-ex-cell justify-end items-end">flex 9</div>
-                        </div>
+                <div id="flex-table" class="w-52 h-52 p-2 m-2 bg-blue-300">
+                    <div class="table-flex-row">
+                        <div class="flex-ex-cell justify-start items-start">flex 1</div>
+                        <div class="flex-ex-cell justify-center items-start">flex 2</div>
+                        <div class="flex-ex-cell justify-end items-start">flex 3</div>
+                    </div>
+                    <div class="table-flex-row">
+                        <div class="flex-ex-cell justify-start items-center">flex 4</div>
+                        <div class="flex-ex-cell justify-center items-center">flex 5</div>
+                        <div class="flex-ex-cell justify-end items-center">flex 6</div>
+                    </div>
+                    <div class="table-flex-row">
+                        <div class="flex-ex-cell justify-start items-end">flex 7</div>
+                        <div class="flex-ex-cell justify-center items-end">flex 8</div>
+                        <div class="flex-ex-cell justify-end items-end">flex 9</div>
                     </div>
                 </div>
-                
-                <div id="grid-example" class="bg-red-500 w-1/2 m-3 p-5">
-                    <p>Ejemplo de grid</p>
-                    <p>Ejemplo de grid</p>
-                    <p>Ejemplo de grid</p>
-                    <p>Ejemplo de grid</p>
+
+                <div id="grid-example" class="w-52 h-52 p-2 m-2 bg-red-300 border-black border-2 grid grid-cols-4 grid-rows-3">
+                    <p id="grid-head" class="bg-blue-400">header</p>
+                    <p id="grid-background" class="bg-red-400">background</p>
+                    <p id="grid-content" class="bg-green-400 col-start-2 col-end-4 row-start-2 row-end-3">content</p>
+                    <p id="grid-footer" class="bg-gray-400">footer</p>
                 </div>
             </div>
         </div>

@@ -5,6 +5,11 @@ app = Flask(__name__)
 app.static_folder = 'static'
 
 # ======= Rutas ========
+# ------ General Rutes ------
+@app.route('/vars.json')
+def serve_tailwind_json():
+    return send_from_directory('.', 'vars.json')
+
 @app.route('/hc/')
 def health_check():
     return 'ok'
@@ -17,6 +22,10 @@ def serve_index():
 @app.route('/style.css')
 def serve_principal_css():
     return send_from_directory('.', 'style.css')
+
+@app.route('/script.js')
+def serve_principal_js():
+    return send_from_directory('.', 'script.js')
 
 # ------ React archivos ------
 @app.route('/reactFront/')
@@ -45,14 +54,28 @@ def serve_tailwind_js():
 def serve_tailwind_css():
     return send_from_directory('front_examples/tailwind/assets', 'output.css')
 
-@app.route('/front_examples/vars.json/')
-def serve_tailwind_json():
-    return send_from_directory('.', 'vars.json')
-
 
 @app.route('/bootstrap/')
 def serve_bootstrap():
     return send_from_directory('front_examples/bootstrap', 'index.html')
+
+# Acerca de mi
+@app.route('/acerca-de-mi/index.html')
+def serve_about_me():
+    return send_from_directory('acerca-de-mi', 'index.html')
+
+@app.route('/acerca-de-mi/style.css')
+def serve_about_me_css():
+    return send_from_directory('acerca-de-mi', 'style.css')
+
+@app.route('/acerca-de-mi/acerca-de-mi.js')
+def serve_about_me_js():
+    return send_from_directory('acerca-de-mi', 'acerca-de-mi.js')
+
+@app.route('/images/personal-presentation.drawio.png')
+def serve_about_me_image():
+    return send_from_directory('images', 'personal-presentation.drawio.png')
+
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -18,3 +18,22 @@ body, html {
     height: 33%;
     display: flex;
 }
+
+#grid-example {
+  grid-template-areas:
+    "header header header header"
+    "background background background background"
+    "footer footer footer footer"
+}
+
+#grid-head {
+  grid-area: header;
+}
+
+#grid-background {
+  grid-area: background;
+}
+
+#grid-footer {
+  grid-area: footer;
+}

@@ -10,22 +10,31 @@
   <body>
     <div id="img-bottom-left"></div>
     <div id="img-top-right"></div>
-    <div id="carta">
-      <h1 id="titulo">Bienvenidos a mi carta de presentación</h1>
-      <!-- <div id="acerca-de-mi"><a href=""><div>Acerca de mí</div></a></div> -->
-      <div class="text">Esta página fue desplegada por mí mismo usando AWS</div>
-      <div class="text">Acá hay una pequeña demostración de mis conocimientos</div>
-      <ul id="lista-de-fronts">
-        <a href="front_examples/vueFront/dist/index.html"><li style="background-color: rgba(0,192,127,255);">Vue.js</li></a>
-        <a href="front_examples/reactFront/"><li style="background-color: rgba(27,161,204,255);">React.js</li></a>
-        <a href="front_examples/tailwind/index.html"><li style="background-color: rgba(55,188,247,255);">Tailwind</li></a>
-        <a href="front_examples/bootstrap/"><li style="background-color: rgba(123,24,247,255);color: rgb(228, 228, 228);">Bootstrap</li></a>
-        <li>|</li>
-        <a href="./acerca-de-mi/index.html"><li style="background-color: rgb(249, 69, 255);color: rgb(26, 26, 26);">Acerca de mí</li></a>
-      </ul>
-      <div class="text desvanecido">¿Es buen momento de decir que no soy diseñador?</div>
+    <div id="content">
+      <div id="carta">
+        <h1 id="titulo">Bienvenidos a mi carta de presentación</h1>
+        <!-- <div id="acerca-de-mi"><a href=""><div>Acerca de mí</div></a></div> -->
+        <div class="text">Esta página fue desplegada por mí mismo usando AWS</div>
+        <div class="text">Acá hay una pequeña demostración de mis conocimientos</div>
+        <ul id="lista-de-fronts">
+          <a id="vue-button" href="front_examples/vueFront/dist/index.html"><li style="background-color: rgba(0,192,127,255);">Vue.js</li></a>
+          <a id="react-button" href="front_examples/reactFront/"><li style="background-color: rgba(27,161,204,255);">React.js</li></a>
+          <a id="tailwind-button" href="front_examples/tailwind/index.html"><li style="background-color: rgba(55,188,247,255);">Tailwind</li></a>
+          <a id="bootstrap-button" href="front_examples/bootstrap/index.html"><li style="background-color: rgba(123,24,247,255);color: rgb(228, 228, 228);">Bootstrap</li></a>
+          <li>|</li>
+          <a id="about-button" href="./acerca-de-mi/index.html"><li style="background-color: rgb(249, 69, 255);color: rgb(26, 26, 26);">Acerca de mí</li></a>
+        </ul>
+        <div class="text desvanecido">¿Es buen momento de decir que no soy diseñador?</div>
+      </div>
+  
+      <div id="messages-container">
+        <p id="text-vue">Demostración de las funciones básicas de Vue</p>
+        <p id="text-react">asdasd</p>
+        <p id="text-tailwind">Tailwind para demostrar mis habilidades de frontend</p>
+        <p id="text-bootstrap">Uso general de Bootstrap</p>
+        <p id="text-about">Un poco de mí y cómo se desplego esta página</p>
+      </div>
     </div>
-
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>
