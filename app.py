@@ -10,9 +10,17 @@ app.static_folder = 'static'
 def serve_tailwind_json():
     return send_from_directory('.', 'vars.json')
 
+@app.route('/front_examples/in-construction.html')
+def serve_tailwind_in_construccion():
+    return send_from_directory('front_examples', 'in-construction.html')
+
 @app.route('/hc/')
 def health_check():
     return 'ok'
+
+@app.route('/images/sleepy_cat.jpeg')
+def sleepy_cat_image():
+    return send_from_directory('images', 'sleepy_cat.jpeg')
 
 # Ruta principal
 @app.route('/')
@@ -53,6 +61,10 @@ def serve_tailwind_js():
 @app.route('/front_examples/tailwind/index.html/assets/output.css/')
 def serve_tailwind_css():
     return send_from_directory('front_examples/tailwind/assets', 'output.css')
+
+@app.route('/images/cat_compressed.jpg')
+def serve_tailwind_image():
+    return send_from_directory('images', 'cat_compressed.jpg')
 
 
 @app.route('/bootstrap/')

@@ -12,8 +12,8 @@
                 <a id="link-home" href="">Volver al Inicio</a>
             </nav>
 
-            <div id="content" class="h-full w-full p-6 flex">
-                <div id="flex-table" class="w-52 h-52 p-2 m-2 bg-blue-300">
+            <div id="content" class="h-full w-full p-6 flex flex-wrap content-start">
+                <div id="flex-table" class="example-container bg-blue-300">
                     <div class="table-flex-row">
                         <div class="flex-ex-cell justify-start items-start">flex 1</div>
                         <div class="flex-ex-cell justify-center items-start">flex 2</div>
@@ -31,11 +31,62 @@
                     </div>
                 </div>
 
-                <div id="grid-example" class="w-52 h-52 p-2 m-2 bg-red-300 border-black border-2 grid grid-cols-4 grid-rows-3">
-                    <p id="grid-head" class="bg-blue-400">header</p>
+                <div id="grid-example" class="example-container bg-red-300 grid grid-cols-4 grid-rows-3">
+                    <p id="grid-head" class="bg-blue-400">header - grid</p>
                     <p id="grid-background" class="bg-red-400">background</p>
                     <p id="grid-content" class="bg-green-400 col-start-2 col-end-4 row-start-2 row-end-3">content</p>
-                    <p id="grid-footer" class="bg-gray-400">footer</p>
+                    <p id="grid-footer" class="bg-gray-400">footer - grid</p>
+                </div>
+
+                <div id="overflow-example" class="example-container bg-green-300 overflow-visible flex flex-col justify-between">
+                    <div class="bg-green-100 overflow-visible border-black border">overflow VISIBLE - Lorem ipsum</div>
+                    <div class="bg-green-100 overflow-hidden border-black border">overflow HIDDEN - Lorem ipsum</div>
+                    <div class="bg-green-100 overflow-scroll border-black border">overflow SCROLL - Lorem ipsum</div>
+                    <div class="bg-green-100 overflow-auto border-black border">overflow AUTO - Lorem ipsum</div>
+                    <div class="bg-green-100 overflow-clip border-black border">overflow CLIP - Lorem ipsum</div>
+                </div>
+
+                <div id="position-example" class="flex border-black border-2 h-fit w-fit">
+                    <div class="flex flex-col m-2 h-auto h-52 justify-between">
+                        <button>Static</button>
+                        <button>Relative</button>
+                        <button>Absolute</button>
+                        <button>Sticky</button>
+                    </div>
+                    <div class="example-container bg-lime-300 overflow-y-scroll overflow-x-hidden">
+                        <div class="h-96 flex gap-2 relative">
+                            <div class="w-14 h-14 bg-blue-100"></div>
+                            <div id="div-position-example" class="w-14 h-14 bg-blue-200 text-xs">div-ejemplo</div>
+                            <div class="w-14 h-14 bg-blue-100"></div>
+                            <p id="message-position-example" class="absolute top-16"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transition-example" class="example-container w-full flex">
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
+                    
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
+
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
+
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
+
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
+
+                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
+                    </svg>
                 </div>
             </div>
         </div>

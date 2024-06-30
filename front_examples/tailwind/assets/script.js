@@ -15,3 +15,27 @@ function makeChanges(data)  {
 
     linkHome.href = data.principalUrl
 }
+
+// Position example
+const containerPositionExample = document.getElementById("position-example")
+let buttonsPositionExample = containerPositionExample.firstElementChild.children
+buttonsPositionExample = Array.from(buttonsPositionExample);
+const divPositionExample = document.getElementById("div-position-example")
+const messagePositionExample = document.getElementById("message-position-example")
+const messages = [
+    'static es el predefinido',
+    'se mueve pero aun ocupa su espacio',
+    'ya no ocupa su espacio original',
+    'combinacion de relative y fixed, use el scroll para ver la version fixed',
+]
+
+buttonsPositionExample.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        divPositionExample.style.position = (button.innerText).toLowerCase()
+        divPositionExample.style.top = "10px"
+        divPositionExample.style.left = "4.5rem"
+
+        messagePositionExample.innerText = messages[index]
+        console.log(messages[index]);
+    })
+});
