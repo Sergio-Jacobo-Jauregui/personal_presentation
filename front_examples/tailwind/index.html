@@ -1,96 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tailwaind example front</title>
-        <link href="./assets/output.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="principal-container" class="flex flex-col h-full">
-            <nav class="bg-green-500 h-10 flex items-center pl-5">
-                <a id="link-home" href="">Volver al Inicio</a>
-            </nav>
+<html>
+  <head>
+    <!-- enlace para tailwind -->
+    <link rel="stylesheet" href="./assets/output.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-            <div id="content" class="h-full w-full p-6 flex flex-wrap content-start">
-                <div id="flex-table" class="example-container bg-blue-300">
-                    <div class="table-flex-row">
-                        <div class="flex-ex-cell justify-start items-start">flex 1</div>
-                        <div class="flex-ex-cell justify-center items-start">flex 2</div>
-                        <div class="flex-ex-cell justify-end items-start">flex 3</div>
-                    </div>
-                    <div class="table-flex-row">
-                        <div class="flex-ex-cell justify-start items-center">flex 4</div>
-                        <div class="flex-ex-cell justify-center items-center">flex 5</div>
-                        <div class="flex-ex-cell justify-end items-center">flex 6</div>
-                    </div>
-                    <div class="table-flex-row">
-                        <div class="flex-ex-cell justify-start items-end">flex 7</div>
-                        <div class="flex-ex-cell justify-center items-end">flex 8</div>
-                        <div class="flex-ex-cell justify-end items-end">flex 9</div>
-                    </div>
-                </div>
+    <link rel="shortcut icon" href="images/favicon.png" type="">
 
-                <div id="grid-example" class="example-container bg-red-300 grid grid-cols-4 grid-rows-3">
-                    <p id="grid-head" class="bg-blue-400">header - grid</p>
-                    <p id="grid-background" class="bg-red-400">background</p>
-                    <p id="grid-content" class="bg-green-400 col-start-2 col-end-4 row-start-2 row-end-3">content</p>
-                    <p id="grid-footer" class="bg-gray-400">footer - grid</p>
-                </div>
+    <title> Tailwaind example front </title>
 
-                <div id="overflow-example" class="example-container bg-green-300 overflow-visible flex flex-col justify-between">
-                    <div class="bg-green-100 overflow-visible border-black border">overflow VISIBLE - Lorem ipsum</div>
-                    <div class="bg-green-100 overflow-hidden border-black border">overflow HIDDEN - Lorem ipsum</div>
-                    <div class="bg-green-100 overflow-scroll border-black border">overflow SCROLL - Lorem ipsum</div>
-                    <div class="bg-green-100 overflow-auto border-black border">overflow AUTO - Lorem ipsum</div>
-                    <div class="bg-green-100 overflow-clip border-black border">overflow CLIP - Lorem ipsum</div>
-                </div>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-                <div id="position-example" class="flex border-black border-2 h-fit w-fit">
-                    <div class="flex flex-col m-2 h-auto h-52 justify-between">
-                        <button>Static</button>
-                        <button>Relative</button>
-                        <button>Absolute</button>
-                        <button>Sticky</button>
-                    </div>
-                    <div class="example-container bg-lime-300 overflow-y-scroll overflow-x-hidden">
-                        <div class="h-96 flex gap-2 relative">
-                            <div class="w-14 h-14 bg-blue-100"></div>
-                            <div id="div-position-example" class="w-14 h-14 bg-blue-200 text-xs">div-ejemplo</div>
-                            <div class="w-14 h-14 bg-blue-100"></div>
-                            <p id="message-position-example" class="absolute top-16"></p>
-                        </div>
-                    </div>
-                </div>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-                <div id="transition-example" class="example-container w-full flex">
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
-                    
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
 
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
+  </head>
 
-                    <svg class="animate-spin" width="16.6%" height="200" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
-                        <polygon points="25,20 40,40 10,40" fill="blue" stroke="blue" stroke-width="1" />
-                    </svg>
-                </div>
+  <body>
+    <div class="hero_area">
+
+      <div class="hero_bg_box">
+        <div class="bg_img_box">
+          <img src="images/hero-bg.png" alt="">
+        </div>
+      </div>
+
+      <!-- HEADER SECTION STRATS -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <div class="navbar-brand">
+              <span>
+                Tailwind Front Example
+              </span>
             </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" id="link-home" title="Ir al inicio">Volver al Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">This <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""> is</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">a</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Template</a>
+                </li>
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- END HEADER SECTION -->
+
+      <!-- SLIDER SECTION -->
+      <section class="slider_section ">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Carrusel item active es un contenedor para el slider -->
+            <div class="carousel-item active">
+              <div class="container grid grid-cols-4	gap-4">
+                <!-- Flex example -->
+                <div class="box-example">
+                    <div class="detail-box">
+                      <h5 class="example-title">
+                        Flex example
+                      </h5>
+                      <p class="example-description">
+                        Posicionamiento
+                      </p>
+                    </div>
+                    <div id="flex-table" class="example-container bg-blue-400">
+                      <div class="table-flex-row">
+                          <div class="flex-ex-cell justify-start items-start">flex 1</div>
+                          <div class="flex-ex-cell justify-center items-start">flex 2</div>
+                          <div class="flex-ex-cell justify-end items-start">flex 3</div>
+                      </div>
+                      <div class="table-flex-row">
+                          <div class="flex-ex-cell justify-start items-center">flex 4</div>
+                          <div class="flex-ex-cell justify-center items-center">flex 5</div>
+                          <div class="flex-ex-cell justify-end items-center">flex 6</div>
+                      </div>
+                      <div class="table-flex-row">
+                          <div class="flex-ex-cell justify-start items-end">flex 7</div>
+                          <div class="flex-ex-cell justify-center items-end">flex 8</div>
+                          <div class="flex-ex-cell justify-end items-end">flex 9</div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Grid example -->
+                <div class="box-example">
+                  <div class="detail-box">
+                    <h5 class="example-title">
+                      Grid example
+                    </h5>
+                    <p class="example-description">
+                      Posicionamiento
+                    </p>
+                  </div>
+                  <div id="grid-example" class="example-container bg-blue-300 grid grid-cols-4 grid-rows-3">
+                    <p id="grid-head" class="bg-blue-500">header - grid</p>
+                    <p id="grid-background" class="bg-blue-600">background</p>
+                    <p id="grid-content" class="bg-blue-700 col-start-2 col-end-4 row-start-2 row-end-3">content</p>
+                    <p id="grid-footer" class="bg-blue-800">footer - grid</p>
+                  </div>
+                </div>
+                <!-- Overflow example -->
+                <div class="box-example">
+                    <div class="detail-box">
+                      <h5 class="example-title">
+                        Overflow example
+                      </h5>
+                      <p class="example-description">
+                        Visibilidad de texto
+                      </p>
+                    </div>
+                    <div id="overflow-example" class="example-container bg-blue-400 overflow-visible flex flex-col justify-between">
+                      <div class="bg-blue-200 overflow-visible border-black border">overflow VISIBLE - Lorem ipsum</div>
+                      <div class="bg-blue-200 overflow-hidden border-black border">overflow HIDDEN - Lorem ipsum</div>
+                      <div class="bg-blue-200 overflow-scroll border-black border">overflow SCROLL - Lorem ipsum</div>
+                      <div class="bg-blue-200 overflow-auto border-black border">overflow AUTO - Lorem ipsum</div>
+                      <div class="bg-blue-200 overflow-clip border-black border">overflow CLIP - Lorem ipsum</div>
+                    </div>
+                </div>
+                <!-- Position example -->
+                <div class="box-example">
+                    <div class="detail-box">
+                      <h5 class="example-title">
+                        Position example
+                      </h5>
+                      <p class="example-description">
+                        Diferencias de posicionamiento
+                      </p>
+                    </div>
+                    <div id="position-example" class="flex flex-col w-full items-center">
+                      <div class="w-full flex m-2 h-auto justify-between overflow-x-scroll gap-5">
+                          <button>Static</button>
+                          <button>Relative</button>
+                          <button>Absolute</button>
+                          <button>Sticky</button>
+                      </div>
+                      <div class="example-container bg-blue-400 overflow-y-scroll overflow-x-hidden">
+                          <div class="h-96 flex gap-2 relative">
+                              <div class="w-14 h-14 bg-blue-300"></div>
+                              <div id="div-position-example" class="w-14 h-14 bg-blue-100 text-xs">div-ejemplo</div>
+                              <div class="w-14 h-14 bg-blue-300"></div>
+                              <p id="message-position-example" class="absolute top-16"></p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- Animation 1 example -->
+                <div class="box-example">
+                    <div class="detail-box">
+                      <h5 class="example-title">
+                        Animation spin example
+                      </h5>
+                      <p class="example-description">
+                        Animation from Tailwind 
+                      </p>
+                    </div>
+                    <div id="transition-example" class="example-container w-full flex">
+                      <svg class="animate-spin w-full h-full" viewBox="0 0 50 50" style="animation: spin 7s linear infinite;">
+                          <polygon points="25,20 40,40 10,40" fill="#00bbf0" stroke="#00bbf0" stroke-width="1" />
+                      </svg>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- botones para cambiar slider -->
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol> -->
         </div>
 
-        <script src="./assets/script.js"></script>
-    </body>
+      </section>
+      <!-- END SLIDER SECTION -->
+    </div>  
+
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

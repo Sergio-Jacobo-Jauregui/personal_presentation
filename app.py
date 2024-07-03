@@ -66,6 +66,26 @@ def serve_tailwind_css():
 def serve_tailwind_image():
     return send_from_directory('images', 'cat_compressed.jpg')
 
+    # Tailwind template routes
+@app.route('/front_examples/tailwind/index.html/css/bootstrap.css')
+def serve_tailwind_template_css1():
+    return send_from_directory('front_examples/tailwind/css', 'bootstrap.css')
+
+@app.route('/front_examples/tailwind/index.html/css/style.css')
+def serve_tailwind_template_css2():
+    return send_from_directory('front_examples/tailwind/css', 'style.css')
+
+@app.route('/front_examples/tailwind/index.html/css/font-awesome.min.css')
+def serve_tailwind_template_css3():
+    return send_from_directory('front_examples/tailwind/css', 'font-awesome.min.css')
+
+@app.route('/front_examples/tailwind/index.html/css/responsive.css')
+def serve_tailwind_template_css4():
+    return send_from_directory('front_examples/tailwind/css', 'responsive.css')
+
+@app.route('/front_examples/tailwind/index.html/images/hero-bg.png')
+def serve_tailwind_template_css5():
+    return send_from_directory('front_examples/tailwind/images', 'hero-bg.png')
 
 @app.route('/bootstrap/')
 def serve_bootstrap():

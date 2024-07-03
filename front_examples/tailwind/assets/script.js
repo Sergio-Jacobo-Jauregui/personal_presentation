@@ -24,9 +24,9 @@ const divPositionExample = document.getElementById("div-position-example")
 const messagePositionExample = document.getElementById("message-position-example")
 const messages = [
     'static es el predefinido',
-    'se mueve pero aun ocupa su espacio',
-    'ya no ocupa su espacio original',
-    'combinacion de relative y fixed, use el scroll para ver la version fixed',
+    'se mueve y aun ocupa su espacio original',
+    'se mueve pero no ocupa su espacio original',
+    'combinacion de relative y fixed, use el scroll para ver como se queda pegado',
 ]
 
 buttonsPositionExample.forEach((button, index) => {
