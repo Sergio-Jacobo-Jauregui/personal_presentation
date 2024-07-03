@@ -7,6 +7,14 @@ body, html {
   overflow: hidden;
 }
 
+#go-home {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 3;
+  font-size: 17px;
+}
+
 #principal-container {
   height: 100%;
   position: relative;

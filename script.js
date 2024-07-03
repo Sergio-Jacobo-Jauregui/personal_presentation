@@ -20,3 +20,42 @@ listButton.forEach((button, index) => {
         messages[index].classList.remove('appear');
     })
 });
+
+// Changelog
+const changelogList = document.getElementById("changelog-list")
+const changelogButton = document.getElementById("changelog-button")
+const changelogText = document.getElementById("changelog-text")
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('./vars.json')
+        .then(response => response.json() )
+        .then(data => {
+            // Usar solo las ultimas actulizaciones
+            generateChangeLog(data.lastUpdates)
+        })
+        .catch(error => {
+            console.error('No se conecto con el archivo json de la raiz, error:', error);
+        });
+});
+
+changelogButton.addEventListener('click', () => {
+    if (changelogList.style.display == 'block') {
+        changelogList.classList.remove('appear');
+        changelogList.style.display = 'none'
+        changelogText.style.color = 'rgb(66,66,66)'
+    } else {
+        changelogList.style.display = 'block'
+        changelogList.classList.add('appear');
+        changelogText.style.color = 'rgb(0, 0, 0)'
+    }
+
+})
+
+function generateChangeLog(changeLog) {
+    changeLog.forEach(accion => {
+        const newLi = document.createElement('li')
+        newLi.textContent = accion
+
+        changelogList.appendChild(newLi)
+    });
+}
