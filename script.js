@@ -46,7 +46,7 @@ changelogButton.addEventListener('click', () => {
     } else {
         changelogList.style.display = 'block'
         changelogList.classList.add('appear');
-        changelogText.style.color = 'rgb(0, 0, 0)'
+        changelogText.style.color = 'rgb(0, 13, 115)'
     }
 
 })
