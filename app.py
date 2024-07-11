@@ -36,7 +36,7 @@ def serve_principal_js():
     return send_from_directory('.', 'script.js')
 
 # ------ React archivos ------
-@app.route('/reactFront/')
+@app.route('/front_examples/react-front/index.html/')
 def serve_react():
     return send_from_directory('front_examples/reactFront/out', 'index.html')
 
@@ -48,6 +48,15 @@ def serve_vue():
 @app.route('/assets/<path:filename>')
 def serve_vue_assets(filename):
     return send_from_directory('front_examples/vueFront/dist/assets', filename)
+
+#  ------ Bootstrap archivos ------ 
+@app.route('/front_examples/bootstrap/index.html/')
+def serve_bootstrap_index():
+    return send_from_directory('front_examples/bootstrap', 'index.html')
+
+@app.route('/front_examples/bootstrap/index.html/style.css')
+def serve_bootstrap_css():
+    return send_from_directory('front_examples/bootstrap', 'style.css')
 
 #  ------ Tailwind archivos ------ 
 @app.route('/front_examples/tailwind/index.html/')

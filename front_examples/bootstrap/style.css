@@ -1,0 +1,57 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    position: absolute;
+    background-color: rgb(39, 0, 71);
+    width: 100%;
+    height: 100%;
+}
+
+#second-background {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(rgb(202, 132, 255) 0%, rgb(190, 98, 255) 20%, rgba(39,0,71) 60%, rgba(39,0,71) 100%);
+    border-radius: 50%;
+}
+
+.container-slider {
+    padding: 3% 15%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container-slider p, .container-slider h3 {
+    color: white;
+    text-align: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.col-examples {
+    background-color: rgb(186, 148, 255);
+    text-align: center;
+    line-height: 40px;
+    /* max-height: 40px */
+}
+
+.real-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+}
+
+/* .normal-color {
+    color: white;
+    text-align: center;
+} */
