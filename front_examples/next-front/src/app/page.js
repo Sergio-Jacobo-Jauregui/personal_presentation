@@ -1,9 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import Component1 from "./Components/Component1";
+
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Component1 label="asdasd"/>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;

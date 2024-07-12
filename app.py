@@ -35,12 +35,20 @@ def serve_principal_css():
 def serve_principal_js():
     return send_from_directory('.', 'script.js')
 
-# ------ React archivos ------
-@app.route('/front_examples/react-front/index.html/')
-def serve_react():
-    return send_from_directory('front_examples/reactFront/out', 'index.html')
+# ------ Next Routes ------
+@app.route('/front_examples/next-front/out/index.html/')
+def serve_next_index():
+    return send_from_directory('front_examples/next-front/out', 'index.html')
 
-# ------ Vue archivos ------
+@app.route('/front_examples/next-front/index.html/')
+def serve_next_css():
+    return send_from_directory('front_examples/next-front/out', 'index.html')
+
+@app.route('/front_examples/next-front/index.html/')
+def serve_next_js():
+    return send_from_directory('front_examples/next-front/out', 'index.html')
+
+# ------ Vue routes ------
 @app.route('/vueFront/')
 def serve_vue():
     return send_from_directory('front_examples/vueFront/dist', 'index.html')

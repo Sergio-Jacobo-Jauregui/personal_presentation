@@ -3,11 +3,11 @@ let messages = messagesContainer.children
 messages = Array.from(messages);
 
 const vueButton = document.getElementById("vue-button")
-const reactButton = document.getElementById("react-button")
+const nextButton = document.getElementById("next-button")
 const tailwindButton = document.getElementById("tailwind-button")
 const bootstrapButton = document.getElementById("bootstrap-button")
 const aboutButton = document.getElementById("about-button")
-const listButton = [vueButton, reactButton, tailwindButton, bootstrapButton, aboutButton]
+const listButton = [vueButton, nextButton, tailwindButton, bootstrapButton, aboutButton]
 
 listButton.forEach((button, index) => {
     button.addEventListener('mouseover', () => {
