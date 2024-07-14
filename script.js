@@ -21,34 +21,35 @@ listButton.forEach((button, index) => {
     })
 });
 
+
 // Changelog
 const changelogList = document.getElementById("changelog-list")
-const changelogButton = document.getElementById("changelog-button")
 const changelogText = document.getElementById("changelog-text")
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('./vars.json')
         .then(response => response.json() )
         .then(data => {
-            // Usar solo las ultimas actulizaciones
+            // Acceso solo las ultimas actulizaciones
             generateChangeLog(data.lastUpdates)
+            // Acceso solo a los toDo
+            toDoLog(data.toDO)
         })
         .catch(error => {
             console.error('No se conecto con el archivo json de la raiz, error:', error);
         });
 });
 
-changelogButton.addEventListener('click', () => {
-    if (changelogList.style.display == 'block') {
-        changelogList.classList.remove('appear');
-        changelogList.style.display = 'none'
-        changelogText.style.color = 'rgb(66,66,66)'
-    } else {
-        changelogList.style.display = 'block'
-        changelogList.classList.add('appear');
-        changelogText.style.color = 'rgb(0, 13, 115)'
-    }
+changelogText.addEventListener('mouseenter', () => {
+    changelogList.style.display = 'block'
+    changelogList.classList.add('appear');
+    changelogText.style.color = 'rgb(0, 13, 115)'
+})
 
+changelogText.addEventListener('mouseleave', () => {
+    changelogList.style.display = 'none'
+    changelogList.classList.remove('appear');
+    changelogText.style.color = 'rgb(66,66,66)'
 })
 
 function generateChangeLog(changeLog) {
@@ -59,3 +60,30 @@ function generateChangeLog(changeLog) {
         changelogList.appendChild(newLi)
     });
 }
+
+// toDo
+const toDoList = document.getElementById("todo-list")
+const toDoText = document.getElementById("todo-text")
+
+toDoText.addEventListener('mouseenter', () => {
+    toDoList.style.display = 'block'
+    toDoList.classList.add('appear');
+    toDoText.style.color = 'rgb(0, 13, 115)'
+})
+
+toDoText.addEventListener('mouseleave', () => {
+    toDoList.style.display = 'none'
+    toDoList.classList.remove('appear');
+    toDoText.style.color = 'rgb(66,66,66)'
+})
+
+function toDoLog(toDoLog) {
+    toDoLog.forEach(accion => {
+        const newLi = document.createElement('li')
+        newLi.textContent = accion
+
+        toDoList.appendChild(newLi)
+    });
+}
+
+
