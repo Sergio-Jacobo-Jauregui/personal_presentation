@@ -148,7 +148,12 @@ a {
   margin-top: 15px;  
 }
 
-
-.asdasdasd {
-  
-}
+/* #circle-mouse {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: rgb(169, 169, 255);
+  pointer-events: none;
+  z-index: 1000;
+} */

@@ -86,4 +86,16 @@ function toDoLog(toDoLog) {
     });
 }
 
+// // Mouse Circle
+// const circleMouse = document.getElementById('circle-mouse');
+
+// function updateCircleMousePosition(event) {
+//     const mouseX = (event.clientX - 7);
+//     const mouseY = (event.clientY - 2);
+
+//     circleMouse.style.left = mouseX + 'px';
+//     circleMouse.style.top = mouseY + 'px';
+// }
+
+// document.addEventListener('mousemove', updateCircleMousePosition);
 
