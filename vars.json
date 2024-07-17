@@ -6,10 +6,11 @@
     "Agregué un acerca de mi",
     "Agregué una pantalla de 'en desarrollo'",
     "Le puse una plantilla a Tailwind",
-    "Agregué ejemplo de Bootstrap"
+    "Agregué ejemplo de Bootstrap",
+    "Agregue Front de Next"
   ],
   "toDO": [
-    "Agregar proyecto Next.js",
+    "Actualizar front Next.js",
     "Decorar la pagina principal",
     "Hacer la pagina principal responsiva"
   ]
