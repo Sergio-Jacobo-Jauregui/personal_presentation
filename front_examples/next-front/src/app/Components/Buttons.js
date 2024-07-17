@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react';
 
 import ButtonPrincipalOffCanvas from "./ButtonPrincipallOffCanvas";
+import ModalButton from './ModalButton';
+import Link from 'next/link'
+
 
 export default function Buttons() {
     const [isDarkTheme, setIsDarkTheme] = useState(false)
@@ -47,9 +50,18 @@ export default function Buttons() {
         <>
             <div className="col buttons-example">
                 <ButtonPrincipalOffCanvas />
+                <ModalButton />
+
+                <hr/>
+
                 <button className={`btn ${isDarkTheme ? 'btn-light' : 'btn-dark'}`} onClick={toggleTheme}>{isDarkTheme ? 'Modo claro' : 'Modo oscuro'}</button>
                 <button className="btn btn-primary" onClick={useBlueTheme}>{isBlueTheme ? 'Modo anterior' : 'Modo azul'}</button>
-                <p>*Esta pagina sigue en desarrollo*</p>
+                
+                <hr />
+
+                <Link href="/pagina2">
+                    <button type="button" class="btn btn-primary" >Usar App Router en url (2da pagina)</button>
+                </Link>
             </div>
         </>
     );

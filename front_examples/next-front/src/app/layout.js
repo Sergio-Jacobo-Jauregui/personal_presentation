@@ -1,10 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css'
 import PrincipalOffCanvas from './Components/PrincipalOffCanvas';
+import Modal from './Components/Modal';
 import Menu from './Components/Menu';
-import ButtonPrincipalOffCanvas from './Components/ButtonPrincipallOffCanvas';
-
-// ButtonPrincipalOffCanvas
 
 export const metadata = {
   title: "Next App Example",
@@ -15,17 +13,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" data-bs-theme="light" suppressHydrationWarning>
-      <body>
-        <PrincipalOffCanvas/>
-        <Menu/>
+    return (
+        <html lang="en" data-bs-theme="light" suppressHydrationWarning>
+            <body>
+                <PrincipalOffCanvas/>
+                <Modal />
+                <Menu/>
 
-        {children}
+                {children}
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>
-        <script src="/toggleColors.js"></script>
-      </body>
-    </html>
-  );
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>
+                <script src="/toggleColors.js"></script>
+            </body>
+        </html>
+    );
 }

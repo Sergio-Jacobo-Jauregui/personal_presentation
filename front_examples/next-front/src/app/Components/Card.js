@@ -1,7 +1,7 @@
 export default function Card() {
     return (
-      <>
-            <div className="card col" style={{width: '18rem'}}>
+        <>
+            <div className="card col d-none d-md-block" style={{width: '18rem'}}>
                 <img src="/gray.jpeg" className='card-img-top'/>
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
@@ -9,7 +9,7 @@ export default function Card() {
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-      </>
+        </>
     );
   }
   

@@ -8,7 +8,6 @@ export default function Home() {
                 <div className="row align-items-center" style={{gap: '15px'}}>
                     <Card />
                     <Card />
-                    <Card />
                     <Buttons />
                 </div>
             </div>
