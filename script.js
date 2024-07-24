@@ -14,7 +14,7 @@ listButton.forEach((button, index) => {
         messages[index].style.display = 'block'
         messages[index].classList.add('appear');
     })
-    
+
     button.addEventListener('mouseleave', () => {
         messages[index].style.display = 'none'
         messages[index].classList.remove('appear');
@@ -85,6 +85,23 @@ function toDoLog(toDoLog) {
         toDoList.appendChild(newLi)
     });
 }
+
+
+// Make responsive movil
+const realContainer = document.getElementById("real-container")
+const imgTopRight = document.getElementById("img-top-right")
+const imgBottomLeft = document.getElementById("img-bottom-left")
+
+console.log(window.innerWidth);
+if (window.innerWidth <= 640) {
+    realContainer.style.padding = '0 30px'
+    imgTopRight.style.right = "20%"
+    imgTopRight.style.top = "-95%"
+
+    imgBottomLeft.style.bottom = "-95%"
+    imgBottomLeft.style.left = "20%"
+}
+
 
 // // Mouse Circle
 // const circleMouse = document.getElementById('circle-mouse');

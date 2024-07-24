@@ -10,6 +10,10 @@ app.static_folder = 'static'
 def serve_tailwind_json():
     return send_from_directory('.', 'vars.json')
 
+@app.route('/pi2')
+def serve_principal_2():
+    return send_from_directory('.', 'principal_index_2.html')
+
 @app.route('/front_examples/in-construction.html')
 def serve_tailwind_in_construccion():
     return send_from_directory('front_examples', 'in-construction.html')
@@ -30,6 +34,10 @@ def serve_index():
 @app.route('/style.css')
 def serve_principal_css():
     return send_from_directory('.', 'style.css')
+
+@app.route('/style_2.css')
+def serve_principal_css_2():
+    return send_from_directory('.', 'style_2.css')
 
 @app.route('/script.js')
 def serve_principal_js():

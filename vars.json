@@ -7,11 +7,11 @@
     "Agregué una pantalla de 'en desarrollo'",
     "Le puse una plantilla a Tailwind",
     "Agregué ejemplo de Bootstrap",
-    "Agregue Front de Next"
+    "Agregue Front de Next",
+    "Hice responsiva la pagina principal"
   ],
   "toDO": [
-    "Actualizar front Next.js",
-    "Decorar la pagina principal",
-    "Hacer la pagina principal responsiva"
+    "Actualizar front Vue.js",
+    "Decorar la pagina principal"
   ]
 }

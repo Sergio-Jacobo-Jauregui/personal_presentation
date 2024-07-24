@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#extra-info {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#info-links {
+  display: flex;
+  list-style-type: none;
+  color: rgb(66, 66, 66);
+  gap: 10px;
+}
+
+#info-links li{
+  display: flex;
+  align-items: center;
+}
+
+#changelog-button:hover {
+  cursor: pointer;
+}
+
+#changelog-list {
+  align-self: flex-end;
+  padding: 10px;
+  display: none;
+}
+
+#todo-list {
+  align-self: flex-end;
+  padding: 10px;
+  display: none;
+}
+
+#img-bottom-left {
+ background-color: rgb(0, 255, 136);
+ position: absolute;
+ width: 700px;
+ height: 700px;
+ bottom: -100%;
+ left: -20%;
+ border-radius: 500px ;
+}
+
+#img-top-right {
+  background-color: rgb(30, 255, 0);
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -90%;
+  right: -20%;
+  border-radius: 500px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#carta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#messages-container {
+    position: absolute;
+    margin-top: 20px;
+    bottom: -70px;
+}
+
+#messages-container * {
+    display: none;
+}
+
+.appear {
+  animation: appear 0.3s ease ;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+#lista-de-fronts {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+#lista-de-fronts li {
+  padding: 8px;
+  border-radius: 7px;
+}
+
+#acerca-de-mi {
+  background-color: rgb(255, 56, 222);
+  padding: 6px 30px;
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+#titulo {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 17px;
+}
+
+.desvanecido {
+  color:rgba(94,94,94);
+  font-size: 15px;
+  margin-top: 15px;  
+}
+
+/* #circle-mouse {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: rgb(169, 169, 255);
+  pointer-events: none;
+  z-index: 1000;
+} */
